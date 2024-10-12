@@ -63,10 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contact-form');
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        // 这里可以添加表单处理逻辑，比如发送到后端或使用第三方服务
+    
         alert('感谢您的留言！我们会尽快回复您。');
         contactForm.reset();
     });
 });
-
-// 这里可以添加照片轮播的JavaScript代码

@@ -57,7 +57,7 @@ nav {
 }
 
 main {
-    padding-top: 80px; /* 为固定导航栏留出空间 */
+    padding-top: 80px; 
 }
 
 section {
@@ -70,7 +70,7 @@ h1, h2 {
 }
 
 .carousel {
-    /* 轮播样式将在JavaScript中处理 */
+    
     height: 400px;
     background-color: #ddd;
     margin-bottom: 2rem;
@@ -113,7 +113,7 @@ h1, h2 {
     background-color: var(--secondary-color);
 }
 
-/* 响应式设计 */
+
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
@@ -230,4 +230,3 @@ h1, h2 {
     background-color: var(--secondary-color);
 }
 
-/* ... 保留之前的响应式样式 ... */
