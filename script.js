@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 初始化Swiper轮播
+
     const swiper = new Swiper('.swiper', {
         loop: true,
         pagination: {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 
-    // 导航栏汉堡菜单
+    
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         burger.classList.toggle('toggle');
     });
 
-    // 滚动效果
+   
     const sections = document.querySelectorAll('section');
     
     window.addEventListener('scroll', () => {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 返回顶部按钮
+    
     const backToTopButton = document.getElementById('back-to-top');
     
     window.addEventListener('scroll', () => {
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // 处理联系表单提交
+    
     const contactForm = document.getElementById('contact-form');
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
