@@ -8,88 +8,87 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* 登录表单样式 */
         #login-modal {
-            display: none; /* 初始隐藏 */
+            display: none; 
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+            background-color: rgba(0, 0, 0, 0.5);
             justify-content: center;
             align-items: center;
-            z-index: 1000; /* 确保在最上层 */
+            z-index: 1000; 
         }
         #login {
             background: white;
             padding: 40px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            animation: fadeIn 0.5s; /* 动画效果 */
-            position: relative; /* 使关闭按钮相对于登录框定位 */
+            animation: fadeIn 0.5s; 
+            position: relative; 
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: scale(0.8); }
             to { opacity: 1; transform: scale(1); }
         }
-        /* 增大输入框和按钮 */
+       
         input[type="email"],
         input[type="password"],
         input[type="text"],
-        textarea { /* 添加 textarea 类型的输入框 */
-            width: 100%; /* 设置输入框宽度为100% */
-            padding: 20px; /* 增加内边距 */
-            margin: 10px 0; /* 上下间距 */
-            border: 1px solid #ccc; /* 边框 */
-            border-radius: 4px; /* 圆角 */
-            font-size: 18px; /* 字体大小 */
+        textarea { 
+            width: 100%; 
+            padding: 20px; 
+            margin: 10px 0; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            font-size: 18px; 
         }
         button {
-            width: 100%; /* 设置按钮宽度为100% */
-            padding: 20px; /* 增加内边距 */
-            margin-top: 10px; /* 上间距 */
-            border: none; /* 去掉边框 */
-            border-radius: 4px; /* 圆角 */
-            background-color: #007bff; /* 按钮背景颜色 */
-            color: white; /* 字体颜色 */
-            font-size: 18px; /* 字体大小 */
-            cursor: pointer; /* 鼠标指针 */
+            width: 100%; 
+            padding: 20px;
+            margin-top: 10px; 
+            border: none;
+            border-radius: 4px; 
+            background-color: #007bff; 
+            color: white; 
+            font-size: 18px; 
+            cursor: pointer; 
         }
         button:hover {
-            background-color: #0056b3; /* 悬停时的背景颜色 */
+            background-color: #0056b3;
         }
-        /* 关闭按钮样式 */
+        
         .close-button {
-            position: absolute; /* 绝对定位 */
-            top: 10px; /* 距离顶部10px */
-            right: 10px; /* 距离右侧10px */
-            background: none; /* 无背景 */
-            border: none; /* 无边框 */
-            cursor: pointer; /* 鼠标指针 */
-            font-size: 24px; /* 图标大小 */
-            color: #333; /* 图标颜色 */
-            padding: 5px; /* 增加按钮内边距，缩小选中范围 */
-            width: 30px; /* 设置按钮宽度 */
-            height: 30px; /* 设置按钮高度 */
+            position: absolute; 
+            top: 10px; 
+            right: 10px; 
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px; 
+            color: #333; 
+            padding: 5px; 
+            width: 30px; 
+            height: 30px; 
         }
-        /* 音乐播放按钮样式 */
+        
         #music-button {
-            position: fixed; /* 固定定位 */
-            bottom: 20px; /* 距离底部20px */
-            right: 20px; /* 距离右侧20px */
-            background-color: #007bff; /* 按钮背景颜色 */
-            color: white; /* 字体颜色 */
-            border: none; /* 无边框 */
-            border-radius: 50%; /* 圆形按钮 */
-            width: 50px; /* 按钮宽度 */
-            height: 50px; /* 按钮高度 */
-            font-size: 24px; /* 图标大小 */
-            cursor: pointer; /* 鼠标指针 */
-            display: flex; /* 使用flexbox */
-            justify-content: center; /* 水平居中 */
-            align-items: center; /* 垂直居中 */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+            position: fixed;
+            bottom: 20px; 
+            right: 20px; 
+            background-color: #007bff;
+            color: white; 
+            border: none; 
+            border-radius: 50%; 
+            width: 50px; 
+            height: 50px; 
+            font-size: 24px;
+            cursor: pointer; 
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
         }
     </style>
 </head>
@@ -128,7 +127,7 @@
             </div>
             <div class="intro">
                 <h1>欢迎来到Feign的个人网站</h1>
-                <p>我是一名全栈开发者，专注于创造优雅的Web和移动应用解决方案。通过代码和设计，我将想法转化为现实。</p>
+                <p>我是一名程序爱好者，专注于学习编程。通过代码和设计，我将想法转化为现实。</p>
             </div>
         </section>
 
