@@ -2,9 +2,15 @@ class AudioPlayer {
     constructor() {
         this.isPlaying = false;
         try {
-            this.audio = new Audio('周杰伦 - 反方向的钟.mp3');
-            console.log('Audio file loaded successfully');
-            this.init();
+            this.audio = new Audio('/周杰伦 - 反方向的钟.mp3');
+            this.audio.addEventListener('canplaythrough', () => {
+                console.log('Audio file is ready to play');
+                this.init();
+            });
+            this.audio.addEventListener('error', (e) => {
+                console.error('Audio file error:', e);
+                alert('音频文件加载失败，请检查文件路径和格式');
+            });
         } catch (error) {
             console.error('Failed to load audio file:', error);
             alert('无法加载音频文件，请检查文件路径');
